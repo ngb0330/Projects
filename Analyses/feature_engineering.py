@@ -82,5 +82,5 @@ def add_days_between(original_data, col1, col2):
 def merge_dataframes(original_dataframe, dataframelist, how):
     new_dataframe = original_dataframe.copy()
     for df in dataframelist:
-        new_dataframe.join(df, how = how)
+        new_dataframe = new_dataframe.join(df, how = how)
     return new_dataframe
